@@ -90,7 +90,7 @@ export async function POST(req: NextRequest) {
       to: ['alexandreproso@gmail.com'],
       subject: `🎯 Novo lead: ${nome} — Estágio ${stage} (${score} pts)`,
       html,
-      replyTo: email,
+      reply_To: email,
     });
 
     if (error) {
