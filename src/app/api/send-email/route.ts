@@ -86,7 +86,7 @@ export async function POST(req: NextRequest) {
 </html>`;
 
     const { error } = await resend.emails.send({
-      from: 'Diagnóstico <onboarding@resend.dev>',
+      from: 'Diagnóstico <contato@alexandreoliveira.sbs>',
       to: ['alexandreproso@gmail.com'],
       subject: `🎯 Novo lead: ${nome} — Estágio ${stage} (${score} pts)`,
       html,
