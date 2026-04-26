@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap');
+
+:root {
+  --bg: #09090b;
+  --card: #131318;
+  --card-input: #1a1a22;
+  --border: rgba(255,255,255,0.08);
+  --green: #4ade80;
+  --green-dim: rgba(74,222,128,0.08);
+  --text-dim: #888;
+  --text-muted: #555;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  background: var(--bg);
+  color: #fff;
+  font-family: 'DM Sans', sans-serif;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.font-syne { font-family: 'Syne', sans-serif; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeup {
+  animation: fadeUp 0.38s ease both;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
