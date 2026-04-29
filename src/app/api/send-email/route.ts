@@ -80,14 +80,14 @@ export async function POST(req: NextRequest) {
       <div class="motivacao">${motivacao.replace(/\n/g,'<br>')}</div>
     </div>
   </div>
-  <div class="footer">Enviado via funil de diagnóstico · alexandreproso@gmail.com</div>
+  <div class="footer">Enviado via funil de diagnóstico · alexandresoetc@gmail.com</div>
 </div>
 </body>
 </html>`;
 
     const { error } = await resend.emails.send({
-      from: 'Diagnóstico <contato@alexandreoliveira.sbs>',
-      to: ['alexandreproso@gmail.com'],
+      from: 'Diagnóstico <leads@alexandreoliveira.sbs>',
+      to: ['alexandresoetc@gmail.com'],
       subject: `🎯 Novo lead: ${name} — Estágio ${stage} (${score} pts)`,
       html,
       reply_to: email,
