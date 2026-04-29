@@ -128,14 +128,18 @@ function Card({ children, key: _key }: { children: React.ReactNode; key?: number
 function Author({ sub }: { sub: string }) {
   return (
     <div style={{ display:'flex', alignItems:'center', gap:10, marginBottom:24 }}>
-      <div style={{
-        width:38, height:38, borderRadius:'50%',
-        background:'linear-gradient(135deg,#2a7a55,#1a4a35)',
-        display:'flex', alignItems:'center', justifyContent:'center',
-        fontSize:13, fontWeight:700, color:'#7fffb2', flexShrink:0,
-        border:'2px solid rgba(100,255,160,0.22)',
-        fontFamily:'Syne,sans-serif',
-      }}>AO</div>
+      <img
+  src="/avatar.png"
+  alt="Alexandre Oliveira"
+  style={{
+    width:38,
+    height:38,
+    borderRadius:'50%',
+    objectFit:'cover',
+    flexShrink:0,
+    border:'2px solid rgba(100,255,160,0.22)',
+  }}
+/>
       <div>
         <div style={{ fontSize:14, fontWeight:600, color:'#f0f0f0', fontFamily:'Syne,sans-serif' }}>Alexandre Oliveira</div>
         <div style={{ fontSize:12, color:'#555', marginTop:1 }}>{sub}</div>
