@@ -7,7 +7,7 @@ export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
     const {
-      nome, whatsapp, email, marca, cargo,
+      name, whatsapp, email, brand, cargo,
       tipoProduto, vendas, pagina, aquisicao,
       faturamento, objetivo, motivacao, score, stage,
     } = body;
