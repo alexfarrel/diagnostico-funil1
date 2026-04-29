@@ -576,15 +576,17 @@ export default function Funnel() {
       // ── Final ──
       case 15: return (
         <Card key={animKey}>
-          <Image
+          <img
   src="/avatar.png"
   alt="Alexandre Oliveira"
-  width={38}
-  height={38}
   style={{
+    width:64,
+    height:64,
     borderRadius:'50%',
     objectFit:'cover',
-    border:'2px solid rgba(100,255,160,0.22)',
+    margin:'0 auto 24px',
+    border:'3px solid rgba(100,255,160,0.2)',
+    display:'block',
   }}
 />
           <div style={{ fontFamily:'Syne,sans-serif', fontSize:26, fontWeight:800, textAlign:'center', lineHeight:1.2, marginBottom:20 }}>
