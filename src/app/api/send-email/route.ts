@@ -55,10 +55,10 @@ export async function POST(req: NextRequest) {
     <div class="section">
       <div class="section-title">Dados do Lead</div>
       <table>
-        <tr><td>Nome</td><td>${nome}</td></tr>
+        <tr><td>Nome</td><td>${name}</td></tr>
         <tr><td>WhatsApp</td><td>${whatsapp}</td></tr>
         <tr><td>E-mail</td><td>${email}</td></tr>
-        <tr><td>Marca</td><td>${marca}</td></tr>
+        <tr><td>Marca</td><td>${brand}</td></tr>
         <tr><td>Cargo</td><td>${cargo}</td></tr>
       </table>
     </div>
@@ -88,7 +88,7 @@ export async function POST(req: NextRequest) {
     const { error } = await resend.emails.send({
       from: 'Diagnóstico <contato@alexandreoliveira.sbs>',
       to: ['alexandreproso@gmail.com'],
-      subject: `🎯 Novo lead: ${nome} — Estágio ${stage} (${score} pts)`,
+      subject: `🎯 Novo lead: ${name} — Estágio ${stage} (${score} pts)`,
       html,
       reply_to: email,
     });
