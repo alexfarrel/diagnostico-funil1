@@ -576,15 +576,17 @@ export default function Funnel() {
       // ── Final ──
       case 15: return (
         <Card key={animKey}>
-          <div style={{
-            width:64, height:64, borderRadius:'50%',
-            background:'linear-gradient(135deg,#2a7a55,#1a4a35)',
-            display:'flex', alignItems:'center', justifyContent:'center',
-            fontSize:22, fontWeight:700, color:'#7fffb2',
-            margin:'0 auto 24px',
-            border:'3px solid rgba(100,255,160,0.2)',
-            fontFamily:'Syne,sans-serif',
-          }}>AO</div>
+          <Image
+  src="/avatar.png"
+  alt="Alexandre Oliveira"
+  width={38}
+  height={38}
+  style={{
+    borderRadius:'50%',
+    objectFit:'cover',
+    border:'2px solid rgba(100,255,160,0.22)',
+  }}
+/>
           <div style={{ fontFamily:'Syne,sans-serif', fontSize:26, fontWeight:800, textAlign:'center', lineHeight:1.2, marginBottom:20 }}>
             Vamos analisar sua estrutura de verdade.
           </div>
