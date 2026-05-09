@@ -2,5 +2,24 @@
   "framework": "nextjs",
   "buildCommand": "next build",
   "devCommand": "next dev",
-  "installCommand": "npm install"
+  "installCommand": "npm install",
+
+  "rewrites": [
+    {
+      "source": "/wp-admin/:path*",
+      "destination": "/404"
+    },
+    {
+      "source": "/wp-login.php",
+      "destination": "/404"
+    },
+    {
+      "source": "/xmlrpc.php",
+      "destination": "/404"
+    },
+    {
+      "source": "/phpmyadmin/:path*",
+      "destination": "/404"
+    }
+  ]
 }
